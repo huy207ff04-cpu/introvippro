@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Intro Presentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="gl"></canvas>
+    <div id="vig"></div>
+
+    <div id="title" aria-live="polite">
+        <h1 id="topic"></h1>
+        <div class="rule"></div>
+        <div id="klass"></div>
+        <div id="author"></div>
+    </div>
+
+    <div id="gate">
+        <div>
+            <button id="startBtn" type="button">Start</button>
+        </div>
+    </div>
+
+    <button id="skip" type="button"></button>
+    <div id="flash"></div>
+
+    <div id="stage">
+        <video id="vidA" class="vid" playsinline controls preload="auto"></video>
+        <video id="vidB" class="vid" playsinline controls preload="auto"></video>
+        <div id="wipe"></div>
+        <div id="ring"></div>
+        <div id="cap"></div>
+        <button id="replay" type="button"></button>
+    </div>
+
+    <!-- Thư viện Three.js và các Shaders hậu kỳ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
